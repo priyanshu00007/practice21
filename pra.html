@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            height: 2000px;
+            width: 100%;
+            /* background: url('c:\Users\Hp\Desktop\website\arnold-francisca-f77Bh3inUpE-unsplash.jpg'); */
+
+        }
+
+        .container {
+            /* background-color: rgb(16, 12, 12); */
+            background-color:#007bff;
+            color: white;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .unorder {
+            font-size: larger;
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            
+
+        }
+
+        .img {
+            height: 70px;
+            width: 70px;
+            padding: 20px 20px;
+        }
+
+        .img1 {
+            height: 1000px;
+            width: 100%;
+            padding: 20px 20px;
+            opacity: 0.8px;
+        }
+
+        .he {
+            color: black;
+            background-color: white;
+            font-size: large;
+            position: relative;
+            top: -50px;
+            left: 1170px;
+            cursor: pointer;
+        }
+
+        .he:hover {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .input {
+            color:grey;
+            height: 20px;
+            width: 500px;
+        }
+
+        .form {
+            color: rgb(254, 250, 250);
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid rgb(5, 5, 6);
+            background-color: white;
+            padding: 104px 300px;
+            margin: 267px 398px;
+        }
+
+        .join {
+            background-color: white;
+            font-size: 3rem;
+        }
+
+        .pizza {
+            height: 200px;
+            width: 200px;
+        }
+
+        .main {
+            background-color: black;
+            height: 500px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+
+
+        }
+
+        .btn {
+            font-size: large;
+            margin-top: 20px;
+        }
+
+        .loem {
+            text-align: center;
+        }
+
+        .main1 {
+            color: black;
+
+        }
+
+        .about {
+            background-color: white;
+            color:black;
+            font-size: 50px;
+            padding:20px 36px;
+        }
+
+        .para {
+            color:white;
+            font-size: x-large;
+            font-weight: 500;
+            padding: 47px 50px;
+            text-align: justify;
+        }
+        .fo{
+            background-color:black;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section ul li a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: #007bff;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons li {
+            margin-right: 10px;
+        }
+
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+
+        .social-icons a {
+            color: #555;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer-bottom a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="img"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHwAfAMBEQACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIDBQYEB//EAD4QAAEDAwMCAwQGCAUFAAAAAAEAAgMEBRESITEGQRMiURRhcZEHFTKBodEWUlRVgpKT0iRCcrHhFyM0ssH/xAAaAQEBAAMBAQAAAAAAAAAAAAAAAQIDBAUG/8QAOxEAAgEDAgMEBwYDCQAAAAAAAAECAwQRITEFElETQXGBImGRobHR8BQyUlPB0iNyggYVJDNCRbLh8f/aAAwDAQACEQMRAD8A+NrqOYEAIAQAgBAMgtOCgEgBASa0uOAhQLgBpbx3PqoCKpAQAgJOcTygIoAQEtOGku2PYKFIqkGgEgJZDQNJyfX0UKJUgkAIAQAgBAPBxnGyASAEAICTSAckZQCJzueUAkBZBDJUTMhgjdJLI4NaxvJKElKMIuUnhI0Qy0UR01Xi3GcHDm08nhQt92vBLviAB6E8rLRes5m7mrrHEF61mXs0S89S+K49PHyz9OyNaf8ANFcJC4fcRhVOHfH3mmVvfLWNdecF+h6orV05dTotd2loal32YLiwaSfQPbsslGEvuyx4mmV1fW+takpx6w+TM279PXSzyAV1M5sbj5ZmHVG7+L81hOEofeR2Wt9b3a/hS16bP2fIzDsVidQkLjIAg8EH4FE09g00SaAdyeOyAHO1Y2wBwgIoQEAIAQAgHycDlAa9sZ7NaLnXNH/dYGU8bv1TITqPx0tI/iWUVo2clw1OtSovbWT/AKcY97z5GOsdjs1Y0IL8VGVG/ZOqa60j2bart7hh9LUbtx30nt8OPcttOs4abroedecMo3L516M/xLfz6/H1mhXWWy3NkNzs9WaakfMyOshfuaXUcasemcDuN/QLOUISXNB4Xf6jlo3l3QboXEeaWG4tf6sfrjz8zpIPo7p6W9UdVSVOqkhLXyQzt1ue4H12GD8Nlu+yYmmnoeRL+0U5206c4+k84a0wmezqvoyO/V9HUQSxUsUY0TNZHgubnOQR3+Kzq2/PJNaHPw3jLs6U4TXM3tr3/I4HrayUVju7aWgnfI10et0b93RZ4Ge+fmuOtTjTnhM+n4TeVbu37SrHGuM9TnlrPSBAMtIGT3QokICAEBJri0HHdMA3LUw1PSV8ibu+CWnqP4cuafllZr/Ll5HnXD5L6hLuakvgz39N2O0fUU196hln9lbL4UcMOxcdhnI35PC5ak583JA6K1ap2nY0t99T0eN9Hf7LdP5nfmscXHVGOLzqvryDxvo7/Zbp/M780xcdUMXnVfXkHi/R3+y3T+Z35pi46oYvOq+vI0+iabpqvj8JlOx9ZFM+YNka7U1gf5N+HADT67r1bWnSnFKWsjw+NVr+lNtSapvT1ba+D3LKwVXV9/raA1UlNaKDDJGwnBmcfX14PPGPes3F3FVxziKNVFU+GWkK3KpVZ6rPcvr60KLpZJOkoPrbp6rqBHC4GemkdlsjSQPy/wB+ylW3duuem/I2Wt/Hicvs13Fa7Nbp/XyNu8fo5V26K9Xeni0TQtayRzS53mGQABydzgrbUjRce0mjzrT7fTrO1oSejendpvv3M+QEYJGc47+q8w+6GMBuTuc8IBFxcck5QgkA0AIBIDouhqiFl6NFVn/DXGJ1LIP9X2fx2+9baL9PD2eh5vFqcnbdrD71NqS8tzSkjMX0ZOgJBdHcS0n1w5caX8UyjNTvU+sf0PHbWR0dkgq6S1RXSolndHJra6QRADYAAAguDu5I2B547YxxTUoxyzC4bq3LpTqunFJNbLOfHOUsdE91sZnUlJT0V5ngowWwjBaznRkfZzk5x6/gsKsVCbijpsatStbxnU369fX3Yz0PA+mnjgjqHwvbDIXCN5adLy3nB93dYanSpwcnFPVbrx2O46ErbFb6SKWWaOK4yuMT9bzkgu2wOAOF32k6MY5bxI+d4zQvK03GKbprX3anoq5qrpW/1ld7PJPa64hzzGMmJ2//ANJ+fuWb5req5YzFmqnCnxK1hS5uWpDbPeim636XqmA2qxU0xbMQJqiRuGsbnPr7lKtd3K7OkvFmdrw+PDZfaLmSytkt2zYu0tgpbfDZrpPHoghaWxucQ7yjAOR32K3VOxjHs6jOC1hfVKsrqgnq9/E+Ud+Me70XkH2rEhAQAgJ/Y2H2v9lCkVSCQDa4tc1zSQ5pyCOxQYzozrJJXSfRy4vOXOry4n1JcsMenk8tNR4lyLbl/Q5mmrKmlLjTVEsWrY6HEen5D5LdGco/deD0Z0qdT78Uza6Hpo63qKM1LJn+GDMHMkDS14IIJzyM7fetlvDtKmGefxapKlaPkaWdNu5rZdP+jasvVdzufUHsFXHGKad0kb4o4g10AIOSDyCO+VlSqynU5H3+44bvhVvb2vbQfpLDy3nO3d8DlqptPb+oJG+yvNPTz/8AjyPBJaOxI2K1YUKmq2ex7NOU69snzelJbo7CLrhktzpqeCD/AA0mGvkmdpLSfdxgL0ft0ZVFGK0Z4EuBuNGU5y9JbJfXeeq99V/VlbS01NDHOJd36H7gZxgY7rZc3XZTjGKyjTZ8J7elKc21jbQ5Hq6uhuFz8WOllgc1gYfFBa6T0Jb2XnXVWNWpmKwe9wyhOhQ5ZST17tl5mCuc7wQAgJt8PHm1ZTBSCEBAMAu4QCQHT7/9PDjtWZPu8yi3PJ/3b+k5fW39YfNU9flZdSTmnnjqGOaHRuD26twSDlVNxaaJOnzxcXs9Dbm6xrJIi0R0zZHh7ZZNAzI08D7viup3lRrGFnXJ58eE0VLOXhYwun/pz2tvdwPxK5Eek0w1t/WHzQYZ0nU0EVLa7AI4GRSOpdUmlukl2mPc+9YxWh5dhVlOvXy8pS08NRdUv9vobRdzgyTwmGcj9dh/5K66/pwhU6rD8icPXY1a1v3ReV4M51cx6YIAQAgBANoycE496AZOBpHHc+qhSPG/oqFqdbZKTqe1RuFHRxSU8uHlkkrC07cjzfBMHi3dbh1w/wCJJqS6J5+Bqe2dV/uej/qN/vVwcPZcM/Nl7H+0Tq3qljcutFC1o7mVgH/umCqjw17VZex/tK/rTqT93W7+uz+9TBl9msPzJex/tLBWdVkZ+p6L+q3+9MGPZcN/Nl7H+0ftfVf7no/6jf71cDsuG/my9j/ac91DRX6o1XG7wBrGAN8sjMMBOwADieSoerY1rKOKNu9/U9fcUyPz0dC13Dbk4M+Hhgn8St7f+HX836GaWOINr8C/5GNytB3EiA1uNi4/ghSCEGgEgBACAEBpUt6utLAIqaukZEz7LTg4HoMgoc1SytqsuacE2WfpLev3hJ/Iz8kNf922n4Pj8zz1t3uFfCIq2qfNGHag1wAGfuHvRm6haUKEuanHDNG3WK13WDTQ3Lwq7tTVTA0OPucOfx+C6IUYVF6MtejOavfXFtLNWnmHWL/T68SdVP1HYYmwVMlRBDGNMeGNczA4w7B/Nap05036SwSFLh92+eKTb8c+zJ4/0lvR3+sZMf6GfksMmx8NtPy/j8ymauul5kjppJpqp5d5IgBufgFUnJ4WrNsKFvbJzSUV3ssvL44YaS2QyNkFKHGV7DlrpXY1Y9QMAZ+K21WklTXd8WYWycpSryWObGP5Vt7dzMDi3haTrEgBACAbsA+UnCFEhAQDbp1eY4CAC4kY4HoEKJCAgAgEYIyhU8GtQ9R3ehboirHSRceHOPEbj79x9y307irDRPT1nFW4da1nlww+q0+Ba/qCKU6qix2p8h5eIi3PyKy7dPeC9hrVjKOka00vE8897qZInQUsVPRQybOZSR+GXD0LuT81rlWljEUkvVoboWdNSU5tya/E848FsZhBBxxhajrBCAgGAT8PVCkw8M2Az7yoCtUgIAQG/DYaCSxG6OvkbA0iN8PsjyWyFurRnv8AHhaHUnz8vKYOpipyY95Km6ajlsEN1muLohMyRwiZRSS6dBI8zm7DOOThHVkp8qRi68VU7Pv8V3lFvsdPNb4q653WG3RTyOZTtfC6QyaftEhv2WgnGVlOpJPEVkydT0nGKy0V0ljqKy111bSOM76SZkYhhjc4yh2fMPdt3CrnhpdRKrCElGTxkvm6akivslqNXHrjpvHMmg4+xr04zz2WdHNXb1mireQp0VWSym0va8GfZ7c66VBjbNHBGyN00s0mdMbG8nbn4LOMeZ4NlzXVvDmay28JLvbPRX2fwY6ae31cddT1MhhY9jDG4SbeQtdwTkEI4YSaecmujdc0pQqx5JRWeunVNb+studnprbFM1t1gnrYHBk0EcT8NJOCA87HB+CSgo511Jb3U60ovs2oy1TbXw3WS6m6aEzaWKa508FfVxiSClfG45B+zqfw0nHCyVJ5SzqzVU4i480o024ReHLK88LvMFzSx7muBDmkgg9iFrPQynqiKAeSARnYoBIAQEmtB3OwQoiQSccIQ9LK17LZJQhrfDfMJi7uCBjCYNfZJ1lV70sGiyvqmWxtFPbpXxU4c3VmVmnWf8wBA+ax0yanZvtXVjLDeO5PbxRClq54aL2estgq4aZ2thmY9vgl3qR2JHB7gq5RnUtXKbqQk4t74xrjbfv9ZTFW1sFDPDDFLGyrcJRIxrmnDM50+rRvn0wphGUraM6kaktcJr29T0Ou1Yy6fWc1Jlz6fSWvDmtcwtDdWecHbf3rbSqdnLOMml2Mew7FPTOffkqgqJ6ar8ajtpjje0074NL3NlycFhzvnJG3PCqrKMuaKS9RslbOpT5Jybecp6Jp/AhU1tRO2GmpKT2WOmf4jYYg5xEmw1OJ3zsBv8EnVykorCXx8RTtlGUpTfM3o89OmF3HorLhUVVLVtFrET6prZamZjH+doOoOxwATvnusp3HNFrlSzuzClZdnOL5m1HOFppnTffYG3mopXQOqKGM1tPGGwzzBzXtbjy+Xg4zsSrG4xh8qbWzMaljGXNHmajLVrT6WTH8z3EkkkkkuPf3rRk68LZEUAIAQAgJOcXYzhARQAgPW651zmTNNS8ibHiZAycAAb8jYAbc4UwjLmY5brXyioElSSKkNEw0tAfpzjgbcnj1TlQ5mRp7hV0waKecsDWOYMAHyuOSNx3ITCCkxOr6p7HRukDmui8EgxtOpvl5258rd+dhupyovMy8Xa4Rjy1b8+0CpIw3Hig6tXHOfuTlTHMyinuFZTzyzwVDo5ZgRI5gA1AkEj5gK40JzEzdK7Q5oqHYdTimd5W7xAYDePT71FFF5mU1VVPWzeNVyGSQgNLtIGwGBwrjGxi3kg5wHlbx6+qAgqQEAIAQAgBATbhu7j9yFIoQEAkBIOwDgb+qgIqgEA0AkAIAQEmtyCeAO6FIoQEAIB5xwgAkk5PKASAEAIAQAgBATe0NDcdwiKRQgIBxtDngHgoUHEk47BQEVSH/2Q==">
+
+    <button class="he" type="button">contact us </button>
+    <button class="he" type="button">join now</button>
+    <div class="container">
+        <ul class="unorder">
+            <li class="li"><a href="#">Home</a> </li>
+            <li class="li"><a href="#">About</a></li>
+            <li class="li"><a href="#">Contact us</a> </li>
+            <li class="li"><a href="#">Support us</a></li>
+        </ul>
+    </div>
+
+    <img class="img1" src="clint-patterson-dYEuFB8KQJk-unsplash.jpg" class="img-fluid" alt="resopnsive">
+    <section class="fo">
+        <h1 class="join">
+            Join us now !
+        </h1>
+        <div class="form">
+
+
+            <input class="input" type="text" placeholder="enter your name">
+
+            <input class="input" type="text" placeholder="enter your address">
+
+            <input class="input" type="text" placeholder="enter your id">
+
+            <input class="input" type="text" placeholder="enter your college name">
+            <button type="button" class="btn">submit</button>
+        </div>
+    </section>
+    </div>
+    <main class="main">
+        <img id="a" class="pizza" src="1.jpg">
+
+        <img id="b" class="pizza" src="5.jpg">
+
+        <img id="c" class="pizza" src="10.jpg">
+
+
+        <img id="d" class="pizza" src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg">
+
+
+    </main>
+
+    <main class="main1">
+        <h3 class="about">About Us</h3>
+
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus quaerat aliquam quia
+            rerum saepe a exercitationem deserunt, ducimus iusto cumque assumenda veniam. Tenetur inventore incidunt
+            velit, recusandae officiis labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum, placeat aliquid magni
+            aspernatur dignissimos, sed architecto nam nobis provident eos expedita facilis natus error. Asperiores
+            magnam ut deserunt? Veritatis possimus vel saepe labore repudiandae ducimus officia, ipsam dolor tempora
+            commodi vero maiores! Ullam enim labore voluptate quod. Repudiandae consectetur cum maxime alias harum
+            aliquam iure maiores corrupti possimus sapiente! Esse ea iste aut reiciendis vitae beatae quia! Iusto nemo
+            optio ad error eaque autem iste tempora, quidem recusandae dolore rem mollitia maiores ipsum quisquam
+            corrupti ab nulla vel libero quo dolor? Nobis veritatis officia ducimus iste sunt impedit amet? Praesentium
+            a eligendi, similique, dolorem veniam corporis nobis, corrupti voluptates explicabo beatae culpa itaque
+            deserunt deleniti. Libero, doloremque quod obcaecati ipsum possimus placeat explicabo laudantium veritatis
+            minus ex assumenda iste magnam consequatur nemo recusandae nisi eum modi reiciendis maiores odio odit
+            similique sequi quas! Quibusdam unde impedit vero consequuntur molestias omnis ex aliquam! Quibusdam
+            voluptatum nam atque laborum dolores quia veniam illum est quam, distinctio maxime! Neque doloremque iste
+            minima earum consequuntur, omnis est voluptate dicta saepe? Ducimus voluptatum placeat eos laudantium
+            laborum aspernatur, reiciendis obcaecati nemo quisquam, officiis id modi molestiae, dicta iusto omnis harum
+            ratione sequi eveniet. Magnam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nobis debitis unde et alias, vero iure quasi
+            molestias repudiandae labore ipsam excepturi consequatur, fugiat rerum necessitatibus delectus aut itaque
+            provident quos voluptatum, sunt facere beatae vitae ducimus. Eligendi illum voluptates, tenetur
+            reprehenderit excepturi explicabo dicta provident et aspernatur veniam commodi!lorem50
+        </p>
+
+    </main>
+    <hr>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Company Name</p>
+                <p>Address, City, Country</p>
+                <p>Email: contact@company.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#" target="_blank">facbook<i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank">twitter<i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank">insta<i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank">linkedin<i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank">youtube<i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Company Name. All rights reserved.</p>
+            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
